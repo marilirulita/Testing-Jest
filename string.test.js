@@ -1,6 +1,7 @@
 const stringLength = require('./string-length');
 const reverseString = require('./reverse-string');
 const Calculator = require('./calculator');
+const capitalize = require('./string-capitalize');
 
 const username = "marili";
 const longUser = "marilirulita";
@@ -102,3 +103,28 @@ describe('Calculator multiply', () => {
     expect(testTwo.multiply()).toBe(60);
   });
 });
+
+// tests for capitalize function
+
+const nameOne = "mary";
+const nameTwo = "rose";
+
+describe('capitalize', () => {
+
+  test('capitalize mary to Mary', () => {
+    expect(capitalize(nameOne)).toMatch(/Mary/);
+  });
+
+  test('capitalize mary not to be mary', () => {
+    expect(capitalize(nameOne)).not.toMatch(/mary/);
+  });
+
+  test('capitalize rose to Rose', () => {
+    expect(capitalize(nameTwo)).toMatch(/Rose/);
+  });
+
+  test('capitalize rose not to be rose', () => {
+    expect(capitalize(nameTwo)).not.toMatch(/rose/);
+  });
+});
+
