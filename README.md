@@ -34,6 +34,7 @@
 ## Authors
 
 👤 **Mar Bautista**
+
 GitHub: [marilirulita](https://github.com/marilirulita)
 
 LinkedIn: [mar bautista](https://www.linkedin.com/in/marbautista/)
