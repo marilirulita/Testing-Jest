@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/marilirulita/Testing-Jest/issues"
   },
-  "homepage": "https://github.com/marilirulita/Testing-Jest#readme"
+  "homepage": "https://github.com/marilirulita/Testing-Jest#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8"
+  }
 }
