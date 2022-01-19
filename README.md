@@ -1,56 +1,43 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Testing Jest
 
-> Description the project.
-
+> Practice tests for JavaScript functions using the Jest library.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Java Script
+- Jest
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Run this command in your OS terminal to get a copy of the project:
 
+  ```
+  git@github.com:marilirulita/Testing-Jest.git
+  ```
 
-To get a local copy up and running follow these simple example steps.
+- Open the folder project from your code editor.
 
-### Prerequisites
+- Run:
 
-### Setup
+  ```
+  npm install
+  ```
+  
+  - From the root folder run test for check test: 
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+  ```
+  npm run test
+  ```
 
 ## Authors
 
-👤 **Author1**
+👤 **Mar Bautista**
+GitHub: [marilirulita](https://github.com/marilirulita)
+LinkedIn: [mar bautista](https://www.linkedin.com/in/marbautista/)
+Twitter: [@marylirulita](https://twitter.com/marylirulita)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -61,12 +48,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
