@@ -25,7 +25,7 @@
   npm install
   ```
   
-  - From the root folder run test for check test: 
+- From the root folder run test for check test: 
 
   ```
   npm run test
@@ -35,7 +35,9 @@
 
 👤 **Mar Bautista**
 GitHub: [marilirulita](https://github.com/marilirulita)
+
 LinkedIn: [mar bautista](https://www.linkedin.com/in/marbautista/)
+
 Twitter: [@marylirulita](https://twitter.com/marylirulita)
 
 
