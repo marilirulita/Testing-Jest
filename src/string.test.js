@@ -3,6 +3,8 @@ import reverseString from './reverse-string';
 import Calculator from './calculator';
 import capitalize from './string-capitalize';
 
+//const addItem = require ('./addFunc');
+
 const username = "marili";
 const longUser = "marilirulita";
 const relative = "dad";
@@ -128,3 +130,28 @@ describe('capitalize', () => {
   });
 });
 
+// add grunction test
+
+// test('Add one new item to the list', () => {
+//     document.body.innerHTML =
+//     '<div>' +
+//     '  <ul id="list"></ul>' +
+//     '</div>';
+//     addItem();
+//     const list = document.querySelectorAll('#list li');
+//     expect(list).toHaveLength(1);
+// });
+
+
+// import { addItem } from './src/display.js';
+
+// test('add new item to list', () => {
+//   let list = [];
+//   const input = 'New Task';
+//   // document.body.innerHTML =
+//   //   '<input type="text" id="input">';
+//   // const input = document.getElementById('input');
+//   // input.value = 'New task';
+//   addItem(input, list);
+//   expect(list).toHaveLength(1);
+// });
