@@ -1,8 +1,4 @@
-//import getTodos from '../getTodos.js';
-import stringLength from '../string-length';
-// import reverseString from '../reverse-string';
-// import Calculator from '../calculator';
-// import capitalize from '../string-capitalize';
+const add = require('../../../testing.js');
 
 // /**
 //  * @jest-environment jsdom
@@ -18,11 +14,11 @@ import stringLength from '../string-length';
 // //   expect(local).toBe(null);
 // // });
 
-test('Test Empty DOM', () => {
-  document.body.innerHTML = '<ul class="todoList"></ul>';
-  getTodos();
-  expect(document.body.querySelectorAll('li').length).toBe(0);
-});
+//test('Test Empty DOM', () => {
+  //document.body.innerHTML = '<ul class="todoList"></ul>';
+  //getTodos();
+  //expect(document.body.querySelectorAll('li').length).toBe(0);
+//});
 
 
 // // test('Add one new item to the list', () => {
@@ -42,24 +38,24 @@ const relative = "dad";
 //test for string lenght
 
 test('string lenght iqual 12', () => {
-  expect(stringLength(username)).toBe(6);
+  expect(add(5, 6)).toBe(11);
 });
 
-test('string lenght iqual 3', () => {
-  expect(stringLength(relative)).toBe(3);
-});
+//test('string lenght iqual 3', () => {
+  //expect(stringLength(relative)).toBe(3);
+//});
 
-test('string lenght is allowed (biger)', () => {
-  expect(stringLength(relative)).toBeGreaterThan(1);
-});
+//test('string lenght is allowed (biger)', () => {
+  //expect(stringLength(relative)).toBeGreaterThan(1);
+//});
 
-test('string lenght is allowed (smaller)', () => {
-  expect(stringLength(username)).toBeLessThan(10);
-});
+//test('string lenght is allowed (smaller)', () => {
+  //expect(stringLength(username)).toBeLessThan(10);
+//});
 
-test('string length not allowed', () => {
-  expect(() => stringLength(longUser)).toThrow(Error);
-});
+//test('string length not allowed', () => {
+//  expect(() => stringLength(longUser)).toThrow(Error);
+//});
 
 // // test for reverse string
 

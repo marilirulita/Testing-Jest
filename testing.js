@@ -1,7 +1,9 @@
-const add = (a, b) => {
+function add(a, b) {
   return a + b;
 }
 console.log(add(5, 6));
+
+module.exports = add;
 //console.log(jsdom);
 
 // const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
