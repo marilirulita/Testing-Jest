@@ -1,15 +1,14 @@
+const add = (a, b) => {
+  return a + b;
+}
+console.log(add(5, 6));
+
 //const jsdom = require("jsdom");
 //const { JSDOM } = jsdom;
 
 //const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
 //console.log(dom.window.document.querySelector("p").textContent); // "Hello world"
 
-const add = (a, b) => {
-  return a + b;
-}
-console.log(add(5, 6));
-
-module.exports = add;
 //console.log(jsdom);
 
 // const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
@@ -24,3 +23,5 @@ module.exports = add;
 
 // // The script will be executed and modify the DOM:
 // dom.window.document.body.children.length === 2;
+
+module.exports = add;
