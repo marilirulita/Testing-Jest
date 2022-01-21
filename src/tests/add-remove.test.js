@@ -1,4 +1,4 @@
-import getTodos from '../getTodos.js';
+//import getTodos from '../getTodos.js';
 import stringLength from '../string-length';
 // import reverseString from '../reverse-string';
 // import Calculator from '../calculator';
@@ -8,8 +8,8 @@ import stringLength from '../string-length';
 //  * @jest-environment jsdom
 //  */
 
- jest.mock('../__mocks__/localstorage');
- jest.mock('../__mocks__/list');
+ //jest.mock('../__mocks__/localstorage');
+ //jest.mock('../__mocks__/list');
 
 // // test('Test Empty Localstorage', () => {
 // //   document.body.innerHTML = '<ul class="todoList"></ul>';
