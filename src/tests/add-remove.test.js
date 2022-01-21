@@ -1,35 +1,4 @@
-const add = require('../../../testing.js');
-
-// /**
-//  * @jest-environment jsdom
-//  */
-
- //jest.mock('../__mocks__/localstorage');
- //jest.mock('../__mocks__/list');
-
-// // test('Test Empty Localstorage', () => {
-// //   document.body.innerHTML = '<ul class="todoList"></ul>';
-// //   getTodos();
-// //   const local = localStorage.getItem('todos');
-// //   expect(local).toBe(null);
-// // });
-
-//test('Test Empty DOM', () => {
-  //document.body.innerHTML = '<ul class="todoList"></ul>';
-  //getTodos();
-  //expect(document.body.querySelectorAll('li').length).toBe(0);
-//});
-
-
-// // test('Add one new item to the list', () => {
-// //     document.body.innerHTML =
-// //     '<div>' +
-// //     '  <ul id="list"></ul>' +
-// //     '</div>';
-// //     addItem();
-// //     const list = document.querySelectorAll('#list li');
-// //     expect(list).toHaveLength(1);
-// // });
+const add = require('../../testing.js');
 
 const username = "marili";
 const longUser = "marilirulita";
