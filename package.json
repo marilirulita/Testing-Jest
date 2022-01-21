@@ -22,9 +22,11 @@
     "jest": "^27.4.7"
   },
   "dependencies": {
+    "@babel/core": "^7.16.10",
+    "babel-jest": "^27.4.6",
     "jsdom": "^19.0.0"
   },
-  "jest":{
+  "jest": {
     "testEnvironment": "jsdom"
   }
 }
