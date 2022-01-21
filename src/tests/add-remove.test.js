@@ -1,9 +1,44 @@
-import stringLength from './string-length';
-import reverseString from './reverse-string';
-import Calculator from './calculator';
-import capitalize from './string-capitalize';
+/**
+ * @jest-environment jsdom
+ */
 
-//const addItem = require ('./addFunc');
+import getTodos from '../getTodos.js';
+import stringLength from '../string-length';
+import reverseString from '../reverse-string';
+import Calculator from '../calculator';
+import capitalize from '../string-capitalize';
+
+
+ jest.mock('../__mocks__/localstorage');
+ jest.mock('../__mocks__/list');
+
+// test('use jsdom in this test file', () => {
+//   const element = document.createElement('div');
+//   expect(element).not.toBeNull();
+// });
+test('Test Empty Localstorage', () => {
+  document.body.innerHTML = '<ul class="todoList"></ul>';
+  getTodos();
+  const local = localStorage.getItem('todos');
+  expect(local).toBe(null);
+});
+
+// test('Test Empty DOM', () => {
+//   document.body.innerHTML = '<ul class="todoList"></ul>';
+//   getTodos();
+//   expect(document.body.querySelectorAll('li').length).toBe(0);
+// });
+
+
+// test('Add one new item to the list', () => {
+//     document.body.innerHTML =
+//     '<div>' +
+//     '  <ul id="list"></ul>' +
+//     '</div>';
+//     addItem();
+//     const list = document.querySelectorAll('#list li');
+//     expect(list).toHaveLength(1);
+// });
 
 const username = "marili";
 const longUser = "marilirulita";
@@ -130,17 +165,7 @@ describe('capitalize', () => {
   });
 });
 
-// add grunction test
 
-// test('Add one new item to the list', () => {
-//     document.body.innerHTML =
-//     '<div>' +
-//     '  <ul id="list"></ul>' +
-//     '</div>';
-//     addItem();
-//     const list = document.querySelectorAll('#list li');
-//     expect(list).toHaveLength(1);
-// });
 
 
 // import { addItem } from './src/display.js';

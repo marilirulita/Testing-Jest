@@ -2,7 +2,7 @@
   "name": "testing-jest",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
-  "main": "string-length.js",
+  "main": "testing.js",
   "scripts": {
     "test": "jest"
   },
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/marilirulita/Testing-Jest#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.16.8",
-    "@testing-library/jest-dom": "^5.16.1",
     "jest": "^27.4.7"
   }
 }
