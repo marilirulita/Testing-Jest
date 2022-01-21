@@ -1,11 +1,3 @@
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-
-const { window } = new JSDOM(``, { runScripts: "outside-only" });
-
-window.eval(`document.body.innerHTML = "<p>Hello, world!</p>";`);
-window.document.body.children.length === 1;
-
 const add = (a, b) => {
   return a + b;
 }
