@@ -20,5 +20,11 @@
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "jsdom": "^19.0.0"
+  },
+  "jest":{
+    "testEnvironment": "jsdom"
   }
 }

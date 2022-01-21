@@ -1,21 +1,16 @@
-// import getTodos from '../getTodos.js';
+import getTodos from '../getTodos.js';
 import stringLength from '../string-length';
 // import reverseString from '../reverse-string';
 // import Calculator from '../calculator';
 // import capitalize from '../string-capitalize';
 
-
 // /**
 //  * @jest-environment jsdom
 //  */
 
-// //  jest.mock('../__mocks__/localstorage');
-// //  jest.mock('../__mocks__/list');
+ jest.mock('../__mocks__/localstorage');
+ jest.mock('../__mocks__/list');
 
-// // test('use jsdom in this test file', () => {
-// //   const element = document.createElement('div');
-// //   expect(element).not.toBeNull();
-// // });
 // // test('Test Empty Localstorage', () => {
 // //   document.body.innerHTML = '<ul class="todoList"></ul>';
 // //   getTodos();
@@ -23,11 +18,11 @@ import stringLength from '../string-length';
 // //   expect(local).toBe(null);
 // // });
 
-// // test('Test Empty DOM', () => {
-// //   document.body.innerHTML = '<ul class="todoList"></ul>';
-// //   getTodos();
-// //   expect(document.body.querySelectorAll('li').length).toBe(0);
-// // });
+test('Test Empty DOM', () => {
+  document.body.innerHTML = '<ul class="todoList"></ul>';
+  getTodos();
+  expect(document.body.querySelectorAll('li').length).toBe(0);
+});
 
 
 // // test('Add one new item to the list', () => {
@@ -180,3 +175,48 @@ test('string length not allowed', () => {
 //   addItem(input, list);
 //   expect(list).toHaveLength(1);
 // });
+
+
+
+// it('check if the correct color is set for the acitve list item', () => {
+//   let props = {id:'123'}
+//   const listItem = activeListItem(props);
+//   expect(listItem.style.backgroundColor).toBe('#ededed');
+// });
+
+// let spy;
+// beforeAll(() => {
+//   spy = jest.spyOn(document, 'getElementById');
+// });
+
+// describe('activeListItem', () => {
+//   describe('with found element', () => {
+//     let mockElement;
+//     beforeAll(() => {
+//       // here you create the element that the document.createElement will return
+//       // it might be even without an id
+//       mockElement = document.createElement('h4');
+//       mockElement.id = '123';
+//       activeListItem(mockElement);
+//       spy.mockReturnValue(mockElement);
+//     });
+
+//     // and then you could expect it to have the background
+//     it('should have the background applied', () => {
+//       expect(mockElement.style.backgroundColor).toBe('red');
+//     });
+//   });
+
+  // describe('without found element', () => {
+  //   // and here you can create a scenario
+  //   // when document.createElement returns null
+  //   beforeAll(() => {
+  //     spy.mockReturnValue(null);
+  //   });
+
+  //   // and expect you function not to throw an error
+  //   it('should not throw an error', () => {
+  //     expect(() => activeListItem({id:'123'})).not.toThrow();
+  //   });
+  // });
+//});
