@@ -1,18 +1,23 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import addItem from "../addFunc.js";
-import jsdom from "jsdom";
-const { JSDOM } = jsdom;
 
 test('Check DOM information', () => {
-  const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
-  const answer = (dom.window.document.querySelector("p").textContent); // "Hello world"
+  document.body.innerHTML = `
+    <div class="flex"><p>Hello World</p></div>`;
 
-  expect(answer).toBe('Hello world');
+  const answer = document.querySelector('p').textContent;
+
+  expect(answer).toBe('Hello World');
 });
 
 test('add new item to list', () => {
   let list = [];
-  const domEnviroment = new JSDOM(`<input type="text" id="input">`);
-  const input = domEnviroment.window.document.getElementById('input');
+
+  document.body.innerHTML = `<input type="text" id="input">`;
+  const input = document.getElementById('input');
   input.value = 'New task';
 
   addItem(input, list);
