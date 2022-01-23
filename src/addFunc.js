@@ -1,10 +1,15 @@
-const addItem = () => {
-  const list = document.getElementById('list');
-  const element = document.createElement('li');
-
-  list.appendChild(element);
+class Task {
+  constructor(description, completed, index) {
+    this.description = description;
+    this.completed = completed;
+    this.index = index;
+  }
 }
 
-addItem();
+function addItem(input, list) {
+  const newTask = new Task(input.value, false, list.length);
+  list.push(newTask);
+  input.value = '';
+}
 
-exports.addItem = addItem;
+module.exports= addItem;
