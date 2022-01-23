@@ -1,5 +1,5 @@
-const addItem = require("../addFunc.js");
-const jsdom = require("jsdom");
+import addItem from "../addFunc.js";
+import jsdom from "jsdom";
 const { JSDOM } = jsdom;
 
 test('Check DOM information', () => {

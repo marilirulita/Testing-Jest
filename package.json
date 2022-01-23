@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/marilirulita/Testing-Jest#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "jest": "^27.4.7",
     "jsdom": "19.0.0",
     "jsdom-global": "3.0.2"

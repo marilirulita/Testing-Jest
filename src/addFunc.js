@@ -6,10 +6,10 @@ class Task {
   }
 }
 
-function addItem(input, list) {
+const addItem = (input, list) => {
   const newTask = new Task(input.value, false, list.length);
   list.push(newTask);
   input.value = '';
 }
 
-module.exports= addItem;
+export default addItem;
