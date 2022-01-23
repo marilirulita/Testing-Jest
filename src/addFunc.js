@@ -7,4 +7,4 @@ const addItem = () => {
 
 addItem();
 
-export default addItem;
+exports.addItem = addItem;

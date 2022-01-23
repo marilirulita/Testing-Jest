@@ -5,4 +5,5 @@ const stringLength = (string) => {
   return string.length;
 }
 
-export default stringLength;
+//export default stringLength;
+exports.stringLength = stringLength;
