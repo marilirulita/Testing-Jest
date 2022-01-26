@@ -1,17 +1,7 @@
-const stringLength = require('../string-length.js');
-const capitalize = require('../string-capitalize.js');
-const reverseString = require('../reverse-string.js');
-const Calculator = require('../calculator.js');
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-
-test('Check DOM information', () => {
-  const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
-  const answer = (dom.window.document.querySelector("p").textContent); // "Hello world"
-
-  expect(answer).toBe('Hello world');
-});
-
+import stringLength from '../string-length.js';
+import capitalize from '../string-capitalize.js';
+import reverseString from '../reverse-string.js';
+import Calculator from '../calculator.js';
 
 const username = "marili";
 const longUser = "marilirulita";
@@ -35,15 +25,15 @@ test('string length not allowed', () => {
  expect(() => stringLength(longUser)).toThrow(Error);
 });
 
-// // test for reverse string
+// test for reverse string
 
-// test('string is reversed', () => {
-//   expect(reverseString(longUser)).toMatch(/atiluriliram/);
-// });
+test('string is reversed', () => {
+  expect(reverseString(longUser)).toMatch(/atiluriliram/);
+});
 
-// test('string is reversed', () => {
-//   expect(reverseString(username)).toMatch(/iliram/);
-// });
+test('string is reversed', () => {
+  expect(reverseString(username)).toMatch(/iliram/);
+});
 
 // tests for calculator
 
@@ -112,24 +102,24 @@ describe('Calculator multiply', () => {
 
 // tests for capitalize function
 
-// const nameOne = "mary";
-// const nameTwo = "rose";
+const nameOne = "mary";
+const nameTwo = "rose";
 
-// describe('capitalize', () => {
+describe('capitalize', () => {
 
-//   test('capitalize mary to Mary', () => {
-//     expect(capitalize(nameOne)).toMatch(/Mary/);
-//   });
+  test('capitalize mary to Mary', () => {
+    expect(capitalize(nameOne)).toMatch(/Mary/);
+  });
 
-//   test('capitalize mary not to be mary', () => {
-//     expect(capitalize(nameOne)).not.toMatch(/mary/);
-//   });
+  test('capitalize mary not to be mary', () => {
+    expect(capitalize(nameOne)).not.toMatch(/mary/);
+  });
 
-//   test('capitalize rose to Rose', () => {
-//     expect(capitalize(nameTwo)).toMatch(/Rose/);
-//   });
+  test('capitalize rose to Rose', () => {
+    expect(capitalize(nameTwo)).toMatch(/Rose/);
+  });
 
-//   test('capitalize rose not to be rose', () => {
-//     expect(capitalize(nameTwo)).not.toMatch(/rose/);
-//   });
-// });
+  test('capitalize rose not to be rose', () => {
+    expect(capitalize(nameTwo)).not.toMatch(/rose/);
+  });
+});
